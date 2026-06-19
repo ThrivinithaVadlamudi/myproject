@@ -1,6 +1,6 @@
-from flask import Flask, app,render_template
+from flask import Flask,render_template
 import flask
-web: gunicorn my_project:app
+app = Flask(__name__)
 @app.route('/')
 def home():
     message="Login Here"
