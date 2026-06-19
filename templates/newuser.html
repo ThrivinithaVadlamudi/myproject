@@ -1,0 +1,18 @@
+{% extends "common.html" %}
+{% block title %}New User Registration{% endblock %}
+{% block content %}
+   <h1>{% block page_title %}Register New User{% endblock %}</h1>
+   <form action="/register" method="post" id="registration-form">
+       <input type="text"  name="username" id="username" placeholder="enter your username"><br><br>
+       <p id="username-error"></p>
+       <input type="password"  name="password" id="password" placeholder="enter your password"><br><br>
+        <p id="password-error"></p>
+       <input type="email"  name="email" id="email" placeholder="enter your email" ><br><br>
+       <p id="email-error"></p>
+       <input type="location"  name="location" id="location" placeholder="enter your location" ><br><br>
+       <p id="location-error"></p>
+       <input type="submit" value="Register">
+   </form>
+   <div id="new-user-link">Already have an account? <a href="/">Login Here</a></div>
+   <script src="{{ url_for('static', filename='validation.js') }}"></script>
+{% endblock %}

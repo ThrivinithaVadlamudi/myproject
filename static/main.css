@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-top: 0;
+}
+footer{
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+.content{
+    background-color: pink;
+    min-height:60vh;
+    margin-top: 0px;
+}
+header{
+    background-color:rgb(0, 13, 255);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#registration-form{
+    margin :0 auto;
+    width:50%;
+}
+#login-form{
+    margin :0 auto;
+    width:50%;
+}
+input{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+input[type="submit"]{
+    background-color: rgb(24, 218, 121);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+p{
+    color: red;
+    font-size: 14px;
+    margin:2px 0 8px 0;
+}
+#new-user-link{
+    text-align: center;
+    margin-top: 20px;
+}
+page_title{
+    text-align: center;
+}

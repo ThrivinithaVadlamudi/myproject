@@ -1,0 +1,19 @@
+{% extends "common.html" %}
+{% block title %}Login Page{% endblock %}
+{% block content %}
+
+    
+   <h1 id="page-title">{% block page_title %}{{ message1 }}{% endblock %}</h1>
+   <form action="/validateusr" method="post" id="login-form">
+         <input type="email"  name="logemail" id="logemail" placeholder="enter your email" ><br><br>
+       <p id="loginemail-error"></p>
+       <input type="password"  name="logpassword" id="logpassword" placeholder="enter your password"><br><br>
+        <p id="loginpassword-error"></p>
+        <input type="submit" value="Login">
+   </form>
+    <div id="new-user-link">New User? <a href="/newuser">Register Here</a></div>
+    
+    <script src="{{ url_for('static', filename='validation.js') }}"></script>
+
+{% endblock %}
+ 
